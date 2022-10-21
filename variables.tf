@@ -48,6 +48,12 @@ variable "volume_type" {
   type        = string
 }
 
+variable "ebs_encryption" {
+  description = "Whether to encrypt the volume"
+  default     = "true"
+  type        = string
+}
+
 variable "environment" {
   description = "environment for this resources."
   type        = string
